@@ -21,7 +21,7 @@ module.exports = async function (params, context) {
 
   if(teacherExist){
     context.status(409)
-    return{"message":"User already exists"}
+    return{"message":"Teacher already exists"}
   }
 
   try{
