@@ -16,6 +16,7 @@ module.exports = async function (params, context) {
     const classesTable = aircode.db.table("classes")
 
     try{
+      console.log("CURRENT TEACHER: ",tokenUser)
       const oneStudent = {
         class: tokenUser.className,
         ...params,
